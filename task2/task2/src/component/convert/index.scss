@@ -1,0 +1,61 @@
+.c-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f1f2f7;
+    .ant-select-selector {
+        width: 150px !important;
+    }
+    .ant-space,
+    .ant-space-item {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    &_currency {
+        form {
+            display: flex;
+            column-gap: 10px;
+            row-gap: 10px;
+            button {
+                padding: 0;
+                height: max-content;
+            }
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+    &_table {
+        &-name {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &-coin {
+                text-align: start;
+            }
+        }
+        table {
+            min-width: 800px;
+            td,
+            th {
+                text-align: center !important;
+            }
+        }
+        &-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 150px !important;
+                max-width: 150px !important;
+            }
+        }
+        .ant-table-cell {
+            padding: 4px 8px !important;
+        }
+    }
+}
